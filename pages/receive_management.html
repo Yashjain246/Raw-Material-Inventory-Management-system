@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Item Inward Management</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="container mt-5">
+    <h2>Items Received</h2>
+    <form id="inwardForm">
+        <div class="mb-3">
+            <label for="receiptNo" class="form-label">Receipt No</label>
+            <input type="text" id="receiptNo" class="form-control" onchange="checkReceiptNo()" required>
+        </div>
+        <div class="mb-3">
+            <label for="receiptDate" class="form-label">Receipt Date</label>
+            <input type="date" id="receiptDate" class="form-control" required>
+        </div>
+        <div class="mb-3">
+            <label for="itemID" class="form-label">Item ID</label>
+            <input type="text" id="itemID" class="form-control" required>
+            <span id="itemName"></span>
+        </div>
+        <div class="mb-3">
+            <label for="quantityReceived" class="form-label">Quantity Received</label>
+            <input type="number" id="quantityReceived" class="form-control" required>
+        </div>
+    </form>
+
+    <nav class="nav my-3">
+        <button type="button" class="btn btn-success my-1" id="save" onclick="saveData()">Save Item</button>
+        <button type="button" class="btn btn-success my-1" id="update" onclick="updateData()">Update</button>
+        <button type="button" class="btn btn-primary my-1" id="new" onclick="resetForm()">New</button>
+        <button type="button" class="btn btn-primary my-1" id="reset" disabled onclick="resetForm()">Reset</button>
+    </nav>
+    <nav class="nav">
+        <button type="button" class="btn btn-primary my-1" id="firstItem" onclick="getFirst()">First Item</button>
+        <button type="button" class="btn btn-primary my-1" id="prevItem" onclick="getPrev()">Prev</button>
+        <button type="button" class="btn btn-primary my-1" id="nextItem" onclick="getNext()">Next</button>
+        <button type="button" class="btn btn-primary my-1" id="lastItem" onclick="getLast()">Last Item</button>
+    </nav>
+</div>
+<script src="./js/receive.js"></script>
+</body>
+</html>

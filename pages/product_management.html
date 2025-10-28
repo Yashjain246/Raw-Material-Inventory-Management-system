@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Item Management</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="container mt-5">
+    <h2>Item Management</h2>
+    <form id="itemForm">
+        <div class="mb-3">
+            <label for="itemID" class="form-label">Item ID</label>
+            <input type="text" id="itemID" class="form-control" onchange="checkItemId()" required>
+        </div>
+        <div class="mb-3">
+            <label for="itemName" class="form-label">Item Name</label>
+            <input type="text" id="itemName" class="form-control" required>
+        </div>
+        <div class="mb-3">
+            <label for="openingStock" class="form-label">Opening Stock</label>
+            <input type="number" id="openingStock" class="form-control" required>
+        </div>
+        <div class="mb-3">
+            <label for="uom" class="form-label">Unit of Measurement (UoM)</label>
+            <input type="text" id="uom" class="form-control" maxlength="10" required>
+        </div>
+    </form>
+    
+    <nav class="nav my-3">
+        <button type="button" class="btn btn-success my-1" id="save" onclick="saveData()">Save Item</button>
+        <button type="button" class="btn btn-success my-1" id="update" onclick="updateData()">Update</button>
+        <button type="button" class="btn btn-primary my-1" id="new" onclick="resetForm()">New</button>
+        <button type="button" class="btn btn-primary my-1" id="reset" disabled onclick="resetForm()">Reset</button>
+    </nav>
+    <nav class="nav">
+        <button type="button" class="btn btn-primary my-1" id="firstItem" onclick="getFirst()">First Item</button>
+        <button type="button" class="btn btn-primary my-1" id="prevItem" onclick="getPrev()">Prev</button>
+        <button type="button" class="btn btn-primary my-1" id="nextItem" onclick="getNext()">Next</button>
+        <button type="button" class="btn btn-primary my-1" id="lastItem" onclick="getLast()">Last Item</button>
+    </nav>
+</div>
+<script src="./js/product.js"></script>
+</body>
+</html>

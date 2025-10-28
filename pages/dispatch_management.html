@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Item Outward Management</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="container mt-5">
+    <h2>Items Issued</h2>
+    <form id="outwardForm">
+        <div class="mb-3">
+            <label for="issueNo" class="form-label">Issue No</label>
+            <input type="text" id="issueNo" class="form-control" onchange="checkIssueNo()" required>
+        </div>
+        <div class="mb-3">
+            <label for="issueDate" class="form-label">Issue Date</label>
+            <input type="date" id="issueDate" class="form-control" required>
+        </div>
+        <div class="mb-3">
+            <label for="itemIDOut" class="form-label">Item ID</label>
+            <input type="text" id="itemIDOut" class="form-control" required>
+            <span id="itemNameOut"></span>
+        </div>
+        <div class="mb-3">
+            <label for="quantityIssued" class="form-label">Quantity Issued</label>
+            <input type="number" id="quantityIssued" class="form-control" required>
+        </div>
+    </form>
+    
+    <nav class="nav my-3">
+        <button type="button" class="btn btn-success my-1" id="save" onclick="saveData()">Save Item</button>
+        <button type="button" class="btn btn-success my-1" id="update" onclick="updateData()">Update</button>
+        <button type="button" class="btn btn-primary my-1" id="new" onclick="resetForm()">New</button>
+        <button type="button" class="btn btn-primary my-1" id="reset" onclick="resetForm()">Reset</button> 
+    </nav>
+    <nav class="nav">
+        <button type="button" class="btn btn-primary my-1" id="firstItem" onclick="getFirst()">First Item</button>
+        <button type="button" class="btn btn-primary my-1" id="prevItem" onclick="getPrev()">Prev</button>
+        <button type="button" class="btn btn-primary my-1" id="nextItem" onclick="getNext()">Next</button>
+        <button type="button" class="btn btn-primary my-1" id="lastItem" onclick="getLast()">Last Item</button>
+    </nav>
+</div>
+<script src="./js/dispatch.js"></script>
+</body>
+</html>
