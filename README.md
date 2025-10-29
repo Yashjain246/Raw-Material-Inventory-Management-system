@@ -25,18 +25,19 @@ The system is divided into four main modules:
 * **Item Management:** Create, Update, and navigate through all inventory items. Each item includes an ID, Name, Opening Stock, and Unit of Measurement (UoM).
     <br>
     <img width="1918" height="964" alt="image" src="https://github.com/user-attachments/assets/08c1121e-feb0-4f61-95e0-d0b0f9410186" />
-
+    <br>
     * **Item Received (Inward):** Log new stock as it arrives. This form automatically updates the "itemsReceived" count for the corresponding item in the database.
     <br>
     <img width="1910" height="963" alt="image" src="https://github.com/user-attachments/assets/aba3edb0-6195-464b-af2f-bfb633bc7bcf" />
-
+    <br>
     * **Item Issue (Outward):** Record items being issued or used. The system performs a real-time check to ensure that you cannot issue more stock than is currently available.
     <br>
     <img width="1910" height="960" alt="image" src="https://github.com/user-attachments/assets/9f80dfd5-4ab2-4176-b687-4da6b6b22017" />
-
+    <br>
     * **Item Report:** View a live summary report of all items. The table dynamically calculates the **Current Stock** by subtracting `itemsIssued` from `itemsReceived`.
     <br>
     <img width="1823" height="959" alt="image" src="https://github.com/user-attachments/assets/f1a3ac05-82c6-42b5-8036-339d274a598d" />
+    <br>
     ### Common Functionality
 
 * **Form Navigation:** All management forms include **First**, **Previous**, **Next**, and **Last** record navigation buttons.
