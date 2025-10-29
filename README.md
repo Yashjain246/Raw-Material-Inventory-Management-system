@@ -8,7 +8,7 @@ This project is built with HTML, Bootstrap, and jQuery, and it uses **JsonPowerD
 
 A short video walkthrough of the project, explaining its features and functionality, can be found here:
 
-➡️ **[Add Your Project Video Link Here]**
+➡️ **(https://drive.google.com/file/d/1tynZjAr_MAYsqlgLIcf2cY51MrZ2-1gI/view?usp=sharing)**
 
 ## 📸 Screenshots
 
@@ -16,7 +16,12 @@ Here is the main dashboard of the application:
 
 <br>
 
-*(Space for your main project screenshot)*
+<img width="1918" height="964" alt="image" src="https://github.com/user-attachments/assets/d761722b-f724-4e4a-9eea-508fdec6971f" />
+
+<img width="1919" height="959" alt="image" src="https://github.com/user-attachments/assets/f38a0fc3-f79e-46c5-8d6c-f3b3cd90a21a" />
+
+<img width="1823" height="959" alt="image" src="https://github.com/user-attachments/assets/a2bf90be-58d0-46ab-bafb-c0bbd1ef36b6" />
+
 
 ## ✨ Features
 
@@ -70,8 +75,8 @@ Here is the file structure (using the new file names):
 
 * **Yash Jain**
 
-* [GitHub Profile](https://github.com/your-username)
-* [LinkedIn Profile](https://linkedin.com/in/your-profile)
+* [GitHub Profile](https://github.com/Yashjain246)
+* [LinkedIn Profile](www.linkedin.com/in/yashjain246)
 
 ## 📄 License
 
