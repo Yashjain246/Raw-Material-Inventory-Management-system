@@ -8,7 +8,7 @@ This project is built with HTML, Bootstrap, and jQuery, and it uses **JsonPowerD
 
 A short video walkthrough of the project, explaining its features and functionality, can be found here:
 
-➡️ **(https://drive.google.com/file/d/1tynZjAr_MAYsqlgLIcf2cY51MrZ2-1gI/view?usp=sharing)**
+➡️ **[[Add Your Project Video Link Here](https://drive.google.com/file/d/1tynZjAr_MAYsqlgLIcf2cY51MrZ2-1gI/view?usp=sharing)]**
 
 ## 📸 Screenshots
 
@@ -18,27 +18,25 @@ Here is the main dashboard of the application:
 
 <img width="1918" height="964" alt="image" src="https://github.com/user-attachments/assets/d761722b-f724-4e4a-9eea-508fdec6971f" />
 
-<img width="1919" height="959" alt="image" src="https://github.com/user-attachments/assets/f38a0fc3-f79e-46c5-8d6c-f3b3cd90a21a" />
-
-<img width="1823" height="959" alt="image" src="https://github.com/user-attachments/assets/a2bf90be-58d0-46ab-bafb-c0bbd1ef36b6" />
-
-
 ## ✨ Features
 
 The system is divided into four main modules:
 
 * **Item Management:** Create, Update, and navigate through all inventory items. Each item includes an ID, Name, Opening Stock, and Unit of Measurement (UoM).
     <br>
-    *(Space for Item Management screenshot)*
+    <img width="1918" height="964" alt="image" src="https://github.com/user-attachments/assets/08c1121e-feb0-4f61-95e0-d0b0f9410186" />
+
     * **Item Received (Inward):** Log new stock as it arrives. This form automatically updates the "itemsReceived" count for the corresponding item in the database.
     <br>
-    *(Space for Item Received screenshot)*
+    <img width="1910" height="963" alt="image" src="https://github.com/user-attachments/assets/aba3edb0-6195-464b-af2f-bfb633bc7bcf" />
+
     * **Item Issue (Outward):** Record items being issued or used. The system performs a real-time check to ensure that you cannot issue more stock than is currently available.
     <br>
-    *(Space for Item Issue screenshot)*
+    <img width="1910" height="960" alt="image" src="https://github.com/user-attachments/assets/9f80dfd5-4ab2-4176-b687-4da6b6b22017" />
+
     * **Item Report:** View a live summary report of all items. The table dynamically calculates the **Current Stock** by subtracting `itemsIssued` from `itemsReceived`.
     <br>
-    *(Space for Report screenshot)*
+    <img width="1823" height="959" alt="image" src="https://github.com/user-attachments/assets/f1a3ac05-82c6-42b5-8036-339d274a598d" />
     ### Common Functionality
 
 * **Form Navigation:** All management forms include **First**, **Previous**, **Next**, and **Last** record navigation buttons.
