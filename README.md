@@ -1,0 +1,80 @@
+# Raw Material Inventory Management System
+
+A simple, web-based inventory management system designed for tracking raw materials. This application allows users to manage items, track incoming (inward) stock, and record outgoing (issued) stock.
+
+This project is built with HTML, Bootstrap, and jQuery, and it uses **JsonPowerDB (JPDB)** for real-time, serverless data storage and retrieval.
+
+## 🎥 Project Demo
+
+A short video walkthrough of the project, explaining its features and functionality, can be found here:
+
+➡️ **[Add Your Project Video Link Here]**
+
+## 📸 Screenshots
+
+Here is the main dashboard of the application:
+
+<br>
+
+*(Space for your main project screenshot)*
+
+## ✨ Features
+
+The system is divided into four main modules:
+
+* **Item Management:** Create, Update, and navigate through all inventory items. Each item includes an ID, Name, Opening Stock, and Unit of Measurement (UoM).
+    <br>
+    *(Space for Item Management screenshot)*
+    * **Item Received (Inward):** Log new stock as it arrives. This form automatically updates the "itemsReceived" count for the corresponding item in the database.
+    <br>
+    *(Space for Item Received screenshot)*
+    * **Item Issue (Outward):** Record items being issued or used. The system performs a real-time check to ensure that you cannot issue more stock than is currently available.
+    <br>
+    *(Space for Item Issue screenshot)*
+    * **Item Report:** View a live summary report of all items. The table dynamically calculates the **Current Stock** by subtracting `itemsIssued` from `itemsReceived`.
+    <br>
+    *(Space for Report screenshot)*
+    ### Common Functionality
+
+* **Form Navigation:** All management forms include **First**, **Previous**, **Next**, and **Last** record navigation buttons.
+* **Data Validation:** All forms include basic validation to ensure no empty fields are submitted.
+* **Dynamic UI:** Buttons like "Save", "Update", and "Reset" are dynamically enabled or disabled based on the form's state.
+
+## 🛠️ Tech Stack
+
+* **Frontend:** HTML5, CSS3, JavaScript (ES6+)
+* **Frameworks/Libraries:**
+    * [Bootstrap 5](https://getbootstrap.com/)
+    * [jQuery 3.7.1](https://jquery.com/)
+    * [Google Fonts (Poppins)](https://fonts.google.com/specimen/Poppins)
+* **Database (BaaS):** [JsonPowerDB (JPDB)](http://login2explore.com/)
+
+## 🚀 Getting Started
+
+To run this project locally, simply:
+
+1.  Clone the repository:
+    ```sh
+    git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
+    ```
+2.  Open the `index.html` file in your web browser.
+
+> **Note:** An active internet connection is required for the application to connect to the JsonPowerDB database and fetch the Bootstrap, Bootstrap Icons, and Google Fonts.
+
+## 📂 File Structure
+
+Here is the file structure (using the new file names):
+├── css/ │ └── style.css ├── js/ │ ├── app.js (Main navigation and page loading) │ ├── jquery-3.7.1.min.js │ ├── product.js (Logic for Item Management) │ ├── receive.js (Logic for Item Received) │ ├── dispatch.js (Logic for Item Issue) │ └── summary.js (Logic for Report) ├── pages/ │ ├── product_management.html │ ├── receive_management.html │ ├── dispatch_management.html │ └── summary_page.html └── index.html (Main application shell)
+
+## 👨‍💻 Author
+
+* **Yash Jain**
+
+* [GitHub Profile](https://github.com/your-username)
+* [LinkedIn Profile](https://linkedin.com/in/your-profile)
+
+## 📄 License
+
+This project is open-source. Feel free to use, modify, and distribute it.
+
+Distributed under the MIT License.
