@@ -8,7 +8,7 @@ This project is built with HTML, Bootstrap, and jQuery, and it uses **JsonPowerD
 
 A short video walkthrough of the project, explaining its features and functionality, can be found here:
 
-➡️ **[[Add Your Project Video Link Here](https://drive.google.com/file/d/1tynZjAr_MAYsqlgLIcf2cY51MrZ2-1gI/view?usp=sharing)]**
+➡️ **[[Video Link](https://drive.google.com/file/d/1tynZjAr_MAYsqlgLIcf2cY51MrZ2-1gI/view?usp=sharing)]**
 
 ## 📸 Screenshots
 
@@ -17,7 +17,7 @@ Here is the main dashboard of the application:
 <br>
 
 <img width="1918" height="964" alt="image" src="https://github.com/user-attachments/assets/d761722b-f724-4e4a-9eea-508fdec6971f" />
-
+<br>
 ## ✨ Features
 
 The system is divided into four main modules:
